@@ -318,7 +318,7 @@ async def main():
         await server.app.run(
             streams[0],
             streams[1],
-            {}  # Empty initialization options
+            server.app.create_initialization_options()
         )
 
 if __name__ == "__main__":
